@@ -1,3 +1,7 @@
-class EventHandler:
-    def emit_event(self):
-        print("event happened")
+import abc
+
+
+class EventHandler(abc.ABC):
+    @abc.abstractmethod
+    def emit_event(self, event):
+        pass
