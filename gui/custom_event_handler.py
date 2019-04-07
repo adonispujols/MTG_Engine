@@ -8,5 +8,4 @@ class EventHandler(event_handler.EventHandler):
         self.events = events
 
     def emit_event(self, event):
-        print("event from handler: " + event)
         self.events.append(event)
